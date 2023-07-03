@@ -1,0 +1,55 @@
+body{
+    width: 100%;
+    background-color: #e7e7e7;
+}
+
+.cabeza{
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 6vh;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #7c7c7c,#ffd45f,#d83eff, #0f870f, #ff7700) 1;
+    border-image-slice:1;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.18);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.cabeza .logo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+
+}
+
+.cabeza .logo h1{
+    font-family: 'Tangerine', cursive;
+    font-size: 180%;
+    letter-spacing: 2px;
+    color: #903749;
+}
+.cabeza .logo1{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2%;
+}
+
+#vinculos {
+    width: 15%;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    margin-left: 3%;
+    border-left: solid 1px black;
+    padding-left: 10px;
+}
+
+#vinculos:hover {
+    color: #903749;
+
+}
