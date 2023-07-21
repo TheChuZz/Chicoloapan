@@ -124,3 +124,137 @@ tr:hover {
   width: 20%;
   background-color: #C4D7B2;
 }
+
+@media (max-width: 767px) {
+
+  *{
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+body{
+  width: 100%;
+}
+
+.padre {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subPadre{
+  width: 98%;
+
+}
+
+#vinculoAdmin {
+  width: 8%;
+  color: black;
+  margin-left: 3%;
+  padding: 5px;
+  background-color: #FFDE7D;
+  border-radius: 10px;
+  border: solid 1px black;
+
+}
+
+#vinculoAdmin:hover {
+    background-color: #d6bb69;
+}
+
+#vinculoAdminDos:hover {
+    color: rgb(255, 255, 255);
+}
+
+#vinculoAdminDos {
+  text-decoration: none;
+  color: black;
+  text-decoration: wavy;
+  font-family: "Playfair Display", serif;
+}
+
+.hijo1 {
+  width: 100%;
+  height: 70px;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.hijos {
+  width: 100%;
+  margin-top: 2%;
+  overflow-x: auto;
+  border-radius: 10px;
+}
+
+.hijos th {
+  background-color: #04aa6d;
+  color: white;
+  text-shadow: 0 0 3px black;
+}
+
+.hijos table {
+  width: 100%;
+  border-collapse: collapse;
+  border: solid 1px rgb(67, 67, 67);
+  margin-bottom: 5%;
+}
+
+.hijos th,
+td {
+  height: 70px;
+  padding: 0.2em;
+  border-bottom: 1px solid #969696;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tr:hover {
+  background-color: rgb(255, 224, 212);
+}
+
+#btn1{
+    width: 100%;
+    height: 30px;
+    background-color: #FFDE7D ;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#btn1:hover{
+    background-color: #d6bb69;
+}
+
+#btn2{
+    width: 100%;
+    height: 30px;
+    background-color: #B83B5E ;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+#btn2:hover{
+    background-color: #8d2d48;
+}
+
+
+#zzz1{
+  width: 50%;
+  background-color: #FFDE7D;
+  text-decoration: none;
+  font-size: .7em;
+}
+
+#zz{
+  width: 20%;
+  background-color: #C4D7B2;
+  font-size: .5em;
+}
+
+
+}

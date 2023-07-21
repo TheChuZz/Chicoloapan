@@ -6,6 +6,8 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import Cookies from "universal-cookie";
 import axios from "axios";
 import md5 from "md5";
+
+
 const baseUrl = "http://localhost:3001/usuarios";
 const cookies = new Cookies();
 
@@ -17,7 +19,6 @@ class Registro extends Component {
     },
     showPassword: false,
   };
-
   handleChange = (e) => {
     this.setState({
       form: {
@@ -26,16 +27,13 @@ class Registro extends Component {
       },
     });
   };
-
   togglePasswordVisibility = () => {
     this.setState((prevState) => ({
       showPassword: !prevState.showPassword,
     }));
   };
-
   iniciarSesion = async (e) => {
     e.preventDefault(); // Evitar la recarga de página
-
     try {
       const response = await axios.get(baseUrl, {
         params: {
@@ -43,7 +41,6 @@ class Registro extends Component {
           password: md5(this.state.form.password),
         },
       });
-
       if (response.data.length > 0) {
         const respuesta = response.data[0];
         cookies.set("id", respuesta.id, { path: "/" });
@@ -57,16 +54,13 @@ class Registro extends Component {
       console.log(error);
     }
   };
-
   componentDidMount() {
     if (cookies.get("user")) {
       window.location.href = "./Admin";
     }
   }
-
   render() {
     const { showPassword } = this.state;
-
     return (
       <div className="Padre">
         <div className="informacionIzquierda">
@@ -76,7 +70,6 @@ class Registro extends Component {
         <div className="inicioSeccionH">
           <h1>Inicio de sección</h1>
           <Logo />
-
           <div className="inicioSeccionP">
             <form onSubmit={this.iniciarSesion}>
               <div className="form-group">

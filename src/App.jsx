@@ -1,10 +1,10 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navar from "./pages/Navar";
 import Listas from "./pages/Listas";
 import HomePage from "./pages/HomePage";
 import FormularioPage from "./pages/FormularioPage";
 import Registro from "./pages/Registro";
 import Editar from "./pages/Editar";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Admin from "./pages/Admin";
 
 function App() {

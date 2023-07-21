@@ -85,3 +85,93 @@
     width: 60%;
     
 }
+
+@media (max-width: 767px) {
+    *{
+        font-family: 'Roboto Slab', serif;
+    }
+    .adminPadre{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #logo{
+        width: 100em;
+        text-align: center;
+    }
+    
+    .section{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .section h2{
+        text-align: center;
+        margin: 1em 1em;
+        
+    }
+    
+    .categorias{
+        width: 100%;
+        height: 1000em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 25vh;
+        margin-bottom: 2em;
+        flex-grow: 1;
+    }
+    
+    .seleccionH{
+        width: 100%;
+        height: 10000vh;
+        border-bottom: solid 10px #903749;
+        border-right: solid 10px #903749;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #b4748143;
+        border-radius: 20px;
+        margin-top: 5%;
+    }
+    
+    .seleccionH img{
+        width: 20%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .seleccionH h3{
+        margin-left: 5%;
+        margin-bottom: 2%;
+        z-index: 1;
+    }
+    
+    .seleccionH button{
+        width: 50%;
+        height: 2.5rem;
+        background-color: #903749;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        margin-left: 5%;
+        cursor: pointer;
+        transition: 800ms;
+        margin-bottom: 2%;
+    }
+    
+    .seleccionH button:hover{
+        background-color: #6a2936;
+        scale: 1.1;
+    
+    }
+
+}

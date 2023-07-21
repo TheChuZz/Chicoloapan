@@ -97,163 +97,186 @@ class FormularioPage extends React.Component {
           <Logo1 />
           <h2>En Chicoloapan construimos resultados</h2>
         </div>
-        <div className="xd"></div>
         <form className="formulario" onSubmit={this.enviarDatos}>
           <h1>Formulario para Registro de Convenio</h1>
-          <div className="form-group">
-            <input
-              className="form_input"
-              type="text"
-              id="nombreEmp"
-              name="nombreEmp"
-              placeholder=" "
-              value={nombreEmp}
-              onChange={this.cambioValor}
-            />
-            <label className="form_label" htmlFor="nombreEmp">
-              Nombre de la empresa o escuela:
-            </label>
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              className="form_input"
-              id="direccionEmp"
-              name="direccionEmp"
-              placeholder=" "
-              value={direccionEmp}
-              onChange={this.cambioValor}
-            />
-            <label className="form_label" htmlFor="direccionEmp">
-              Dirección de la institución:
-            </label>
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              className="form_input"
-              id="responsableEmp"
-              name="responsableEmp"
-              placeholder=" "
-              value={responsableEmp}
-              onChange={this.cambioValor}
-            />
-            <label className="form_label" htmlFor="responsableEmp">
-              Responsable directo:
-            </label>
-          </div>
-          <div className="form-group">
-            <input
-              className="form_input"
-              type="text"
-              id="areaEmp"
-              name="areaEmp"
-              placeholder=" "
-              value={areaEmp}
-              onChange={this.cambioValor}
-            />
-            <label className="form_label" htmlFor="areaEmp">
-              Área:
-            </label>
-          </div>
-          <div className="form-group">
-            <input
-              className="form_input"
-              type="text"
-              id="cargoEmp"
-              name="cargoEmp"
-              placeholder=" "
-              value={cargoEmp}
-              onChange={this.cambioValor}
-            />
-            <label className="form_label" htmlFor="cargoEmp">
-              Cargo:
-            </label>
-          </div>
-          <div className="form-group">
-            <input
-              type="tel"
-              className="form_input"
-              id="telefonoEmp"
-              name="telefonoEmp"
-              placeholder=" "
-              value={telefonoEmp}
-              onChange={this.cambioValor}
-            />
-            <label className="form_label" htmlFor="telefonoEmp">
-              Teléfono:
-            </label>
-          </div>
-          <div className="form-group">
-            <input
-              className="form_input"
-              type="email"
-              id="correoEmp"
-              name="correoEmp"
-              placeholder=" "
-              value={correoEmp}
-              onChange={this.cambioValor}
-            />
-            <label className="form_label" htmlFor="correoEmp">
-              Correo:
-            </label>
-          </div>
-          <div className="form-group">
-            <input
-              className="form_input"
-              type="text"
-              id="onjetoEmp"
-              name="onjetoEmp"
-              placeholder=" "
-              value={onjetoEmp}
-              onChange={this.cambioValor}
-            />
-            <label className="form_label" htmlFor="onjetoEmp">
-              Objeto del convenio:
-            </label>
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              className="form_input"
-              id="actividadesEmp"
-              name="actividadesEmp"
-              placeholder=" "
-              value={actividadesEmp}
-              onChange={this.cambioValor}
-            />
-            <label className="form_label" htmlFor="actividadesEmp">
-              Actividades a desarrollar por los alumnos:
-            </label>
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              className="form_input"
-              id="carrerasEmp"
-              name="carrerasEmp"
-              placeholder=" "
-              value={carrerasEmp}
-              onChange={this.cambioValor}
-            />
-            <label className="form_label" htmlFor="carrerasEmp">
-              Carreras:
-            </label>
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              className="form_input"
-              id="observacionesEmp"
-              name="observacionesEmp"
-              placeholder=" "
-              value={observacionesEmp}
-              onChange={this.cambioValor}
-            />
-            <label className="form_label" htmlFor="observacionesEmp">
-              Observaciones:
-            </label>
-          </div>
+
+          <fieldset className="formulario">
+            <legend>Informacion Empresa/Escuela</legend>
+            <div className="form-group">
+              <input
+                className="form_input"
+                type="text"
+                id="nombreEmp"
+                name="nombreEmp"
+                placeholder=" "
+                value={nombreEmp}
+                onChange={this.cambioValor}
+                required
+              />
+              <label className="form_label" htmlFor="nombreEmp">
+                Nombre de la empresa o escuela:
+              </label>
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                className="form_input"
+                id="direccionEmp"
+                name="direccionEmp"
+                placeholder=" "
+                value={direccionEmp}
+                onChange={this.cambioValor}
+                required
+              />
+              <label className="form_label" htmlFor="direccionEmp">
+                Dirección de la institución:
+              </label>
+            </div>
+          </fieldset>
+          <fieldset className="formulario">
+            <legend>Datos del Responsable</legend>
+            <div className="form-group">
+              <input
+                type="text"
+                className="form_input"
+                id="responsableEmp"
+                name="responsableEmp"
+                placeholder=" "
+                value={responsableEmp}
+                onChange={this.cambioValor}
+                required
+              />
+              <label className="form_label" htmlFor="responsableEmp">
+                Nombre del responsable directo:
+              </label>
+            </div>
+            <div className="form-group">
+              <input
+                className="form_input"
+                type="text"
+                id="areaEmp"
+                name="areaEmp"
+                placeholder=" "
+                value={areaEmp}
+                onChange={this.cambioValor}
+                required
+              />
+              <label className="form_label" htmlFor="areaEmp">
+                Área:
+              </label>
+            </div>
+            <div className="form-group">
+              <input
+                className="form_input"
+                type="text"
+                id="cargoEmp"
+                name="cargoEmp"
+                placeholder=" "
+                value={cargoEmp}
+                onChange={this.cambioValor}
+                required
+              />
+              <label className="form_label" htmlFor="cargoEmp">
+                Cargo:
+              </label>
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                className="form_input"
+                id="telefonoEmp"
+                name="telefonoEmp"
+                placeholder=" "
+                value={telefonoEmp}
+                onChange={this.cambioValor}
+                required
+                pattern="\d{10}"
+                maxLength={10}
+                minLength={10}
+                data-tipo="numero"
+              />
+              <label className="form_label" htmlFor="telefonoEmp">
+                Teléfono:
+              </label>
+            </div>
+            <div className="form-group">
+              <input
+                className="form_input"
+                type="email"
+                id="correoEmp"
+                name="correoEmp"
+                placeholder=" "
+                value={correoEmp}
+                onChange={this.cambioValor}
+                required
+              />
+              <label className="form_label" htmlFor="correoEmp">
+                Correo:
+              </label>
+            </div>
+          </fieldset>
+          <fieldset className="formulario">
+            <legend>Informacion Complementaria</legend>
+            <div className="form-group">
+              <input
+                className="form_input"
+                type="text"
+                id="onjetoEmp"
+                name="onjetoEmp"
+                placeholder=" "
+                value={onjetoEmp}
+                onChange={this.cambioValor}
+                required
+              />
+              <label className="form_label" htmlFor="onjetoEmp">
+                Objeto del convenio:
+              </label>
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                className="form_input"
+                id="actividadesEmp"
+                name="actividadesEmp"
+                placeholder=" "
+                value={actividadesEmp}
+                onChange={this.cambioValor}
+                required
+              />
+              <label className="form_label" htmlFor="actividadesEmp">
+                Actividades a desarrollar por los alumnos:
+              </label>
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                className="form_input"
+                id="carrerasEmp"
+                name="carrerasEmp"
+                placeholder=" "
+                value={carrerasEmp}
+                onChange={this.cambioValor}
+                required
+              />
+              <label className="form_label" htmlFor="carrerasEmp">
+                Carreras:
+              </label>
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                className="form_input"
+                id="observacionesEmp"
+                name="observacionesEmp"
+                placeholder=" "
+                value={observacionesEmp}
+                onChange={this.cambioValor}
+              />
+              <label className="form_label" htmlFor="observacionesEmp">
+                Observaciones:
+              </label>
+            </div>
+          </fieldset>
           <input type="submit" value="Enviar" />
         </form>
       </div>
